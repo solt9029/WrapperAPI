@@ -1,0 +1,8 @@
+<?php
+define("TWITTER_API_KEY","");
+define("TWITTER_API_SECRET","");
+define("TWITTER_ACCESS_TOKEN","");
+define("TWITTER_ACCESS_TOKEN_SECRET","");
+define("AMAZON_ASSOCIATE_TAG","");
+define("AMAZON_ACCESS_KEY_ID","");
+define("AMAZON_SECRET_ACCESS_KEY","");
