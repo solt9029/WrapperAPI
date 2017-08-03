@@ -34,6 +34,18 @@ $app->path("/twitter",function($request) use($app){
     });
 });
 
+//yahoo/shopping?query=防災
+$app->path("/yahoo",function($request) use($app){
+	$app->path("/shopping",function($request) use($app){
+		$query=$request->get("query");
+		$url="https://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch";
+		$url.="?appid=".YAHOO_SHOPPING_CLIENT_ID;
+		$url.="&query=".$query;
+		$json=file_get_contents($url);
+		return $json;
+	});
+});
+
 //WrapperAPI/meiji/library/book_state?isbn=9784774184111&campus=nakano
 $app->path("/meiji",function($request) use($app){
 	$app->path("/library",function($request) use($app){
