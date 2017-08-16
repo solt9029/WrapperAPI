@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WrapperAPI @solt9029</title>
+</head>
+<body>
+  <h1>WrapperAPI</h1>
+  <div>
+    <p>You can find this repository in <a href="http://github.com/solt9029/WrapperAPI">http://github.com/solt9029/WrapperAPI</a>.</p>
+    <p>Thank you for using this service.</p>
+    <p>If you have any problems using this api, please contact me through github account or something.</p>
+    <p>I have a web page and url is <a href="http://solt9029.com">http://solt9029.com</a>.</p>
+  </div>
+
+  <h2>Google書籍API</h2>
+  <div>
+    <p>ISBN（13桁のみ）を送ると書籍情報が返ってくる</p>
+    <p>/google/book?isbn=(13桁のISBN)</p>
+    <a href="http://wrapperapi.solt9029.com/google/book?isbn=9784791618682">http://wrapperapi.solt9029.com/google/book?isbn=9784791618682</a>
+  </div>
+
+  <h2>TwitterアイコンAPI</h2>
+  <div>
+    <p>TwitterのID(正確にはスクリーンネーム)をからアイコン画像を得る</p>
+    <p>/twitter/icon_url?screen_name=(TwitterのID)</p>
+    <a href="http://wrapperapi.solt9029.com/twitter/icon_url?screen_name=vuejs">http://wrapperapi.solt9029.com/twitter/icon_url?screen_name=vuejs</a>
+  </div>
+
+  <h2>YahooショッピングAPI</h2>
+  <div>
+    <p>キーワードから商品情報を色々得る</p>
+    <p>/yahoo/shopping?query=(気になるワード)</p>
+    <a href="http://wrapperapi.solt9029.com/yahoo/shopping?query=%E9%98%B2%E7%81%BD">http://wrapperapi.solt9029.com/yahoo/shopping?query=%E9%98%B2%E7%81%BD</a>
+  </div>
+
+  <h2>明治大学図書館貸出状態API(自作)</h2>
+  <div>
+    <p>明治大学にある図書の貸出状態を確認する</p>
+    <p>/meiji/library/book_state?isbn=(10または13桁のISBN)&campus=(キャンパス名・任意)</p>
+    <a href="http://wrapperapi.solt9029.com/meiji/library/book_state?isbn=9784774184111&campus=nakano">http://wrapperapi.solt9029.com/meiji/library/book_state?isbn=9784774184111&campus=nakano</a>
+  </div>
+
+  <h2>Amazonから書籍情報を取得するAPI</h2>
+  <div>
+    <p>Amazonの商品ページなどから書籍を別個で開いて、そのURLから書籍情報を色々と取ってくる</p>
+    <p>/amazon?url=(amazonの本の商品の個別ページのURL)</p>
+    <a href="http://wrapperapi.solt9029.com/amazon?url=https://www.amazon.co.jp/Angular2%E3%81%AB%E3%82%88%E3%82%8B%E3%83%A2%E3%83%80%E3%83%B3Web%E9%96%8B%E7%99%BA-TypeScript%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E5%9F%BA%E6%9C%AC%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0-%E6%9C%AB%E6%AC%A1-%E7%AB%A0/dp/4822296539">http://wrapperapi.solt9029.com/amazon?url=https://www.amazon.co.jp/Angular2%E3%81%AB%E3%82%88%E3%82%8B%E3%83%A2%E3%83%80%E3%83%B3Web%E9%96%8B%E7%99%BA-TypeScript%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E5%9F%BA%E6%9C%AC%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0-%E6%9C%AB%E6%AC%A1-%E7%AB%A0/dp/4822296539</a>
+  </div>
+
+</body>
+</html>

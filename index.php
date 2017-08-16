@@ -9,6 +9,10 @@ header('Access-Control-Allow-Origin: *');
 
 $app = new Bullet\App();
 
+$app->path('/', function($request) use($app) {
+  return file_get_contents('./view/index.html');
+});
+
 //ISBNから本の情報を取得する
 $app->path('/google', function($request) use($app) {
   $app->path('/book', function($request) use($app) {
@@ -111,7 +115,7 @@ $app->path("/amazon",function($request) use($app){
     }
     $authors=mb_substr($authors,0,mb_strlen($authors)-1);
     $array=array(
-    "title"=>$item['ItemAttributes']['Title'],
+      "title"=>$item['ItemAttributes']['Title'],
       "publisher"=>$item["ItemAttributes"]["Publisher"],
       "date"=>mb_substr($item["ItemAttributes"]["PublicationDate"],0,4),
       "isbn"=>$item["ItemAttributes"]["ISBN"],
